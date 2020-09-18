@@ -1,0 +1,24 @@
+{
+  "name": "gcloud-api",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Simple webserver for proxying API calls to Google Cloud.",
+  "main": "index.js",
+  "scripts": {
+    "start"  : "node index.js",
+    "dev"    : "nodemon -r dotenv/config index.js",
+    "test"   : "echo \"Error: no test specified\" && exit 1",
+    "deploy" : "gcloud app deploy"
+  },
+  "author": "Christopher Scott",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/translate": "^6.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,0 +1,7 @@
+.vscode
+node_modules
+.env
+.gcloudignore
+app.yaml
+key.json
+package-lock.json
